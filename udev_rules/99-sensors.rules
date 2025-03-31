@@ -1,0 +1,2 @@
+#SUBSYSTEMS=="usb", ACTION=="ADD", ATTRS{idVendor}=="15d1", ATTRS{idProduct}=="0000", MODE="0666", GROUP="dialout", PROGRAM="/opt/ros/noetic/lib/urg_node/getID /dev/%k q", SYMLINK+="sensors/hokuyo_%c"
+KERNEL=="ttyACM[0-9]*", ATTRS{idVendor}=="15d1", MODE="0666", GROUP="dialout", PROGRAM="/etc/ros/run.sh urg_node getID %N q", SYMLINK+="sensors/hokuyo_%c"

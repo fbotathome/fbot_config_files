@@ -1,0 +1,3 @@
+SUBSYSTEMS=="usb", KERNELS=="1-3", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001",ATTRS{serial}=="A50285BI", MODE="666", SYMLINK+="ttySHARK"
+SUBSYSTEMS=="usb", KERNELS=="1-10", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001",ATTRS{serial}=="A50285BI", MODE="666", SYMLINK+="ttyIMU"
+

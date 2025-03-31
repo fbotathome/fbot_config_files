@@ -1,0 +1,2 @@
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", SYMLINK+="ttyFACE", MODE="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6014",ATTRS{serial}=="FT763N6K", MODE="0666", SYMLINK+="ttyNECK"
