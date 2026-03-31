@@ -49,10 +49,8 @@ sudo sysctl -w net.core.rmem_default=8388608
 ### Permanent
 
 ```bash
-sudo tee /etc/sysctl.d/60-cyclonedds.conf << EOF
-net.core.rmem_max=2147483647
-net.core.rmem_default=8388608
-EOF
+echo "net.core.rmem_max=2147483647" | sudo tee /etc/sysctl.d/60-cyclonedds.conf
+echo "net.core.rmem_default=8388608" | sudo tee -a /etc/sysctl.d/60-cyclonedds.conf
 sudo sysctl --system
 ```
 
