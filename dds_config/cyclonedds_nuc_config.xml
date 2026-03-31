@@ -1,0 +1,24 @@
+<CycloneDDS>
+  <Domain>
+    <General>
+      <Interfaces>
+        <NetworkInterface name="enp86s0"/>
+      </Interfaces>
+      <AllowMulticast>false</AllowMulticast>
+    </General>
+    <Discovery>
+      <ParticipantIndex>auto</ParticipantIndex>
+      <MaxAutoParticipantIndex>120</MaxAutoParticipantIndex>
+      <Peers>
+        <Peer Address="192.168.4.100"/>
+        <Peer Address="192.168.4.102"/>
+      </Peers>
+    </Discovery>
+    <Internal>
+      <SocketReceiveBufferSize min="10MB"/>
+      <Watermarks>
+        <WhcHigh>500kB</WhcHigh>
+      </Watermarks>
+    </Internal>
+  </Domain>
+</CycloneDDS>
